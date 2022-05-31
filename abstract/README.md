@@ -1,6 +1,6 @@
 # Abstract 
 
-[![GitHub Actions Status](https://github.com/xfetus/synthetic-foetuses/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/xfetus/synthetic-foetuses/actions) [![abstract](https://img.shields.io/badge/read-draft-blue.svg)](https://github.com/xfetus/synthetic-foetuses/blob/pdfs/miua2022.pdf)
+[![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/xfetus/miua2022/blob/pdfs/miua2022-abstract.pdf) [![GitHub Actions Status](https://github.com/xfetus/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/xfetus/miua2022/actions) 
 
 ## Considerations 
 Conference abstracts: Authors are invited to submit short papers of length up to 3 pages excluding references (1 column – the LNCS template) showing proof-of-concept research contributions under the topics of the conference. 
