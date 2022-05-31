@@ -1,7 +1,11 @@
-# :page_facing_up: 
+# :page_facing_up: Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs
+T. Bautista, J. Matthew, H. Kerdegari, L. Peralta and M. Xochicale 
 
 ## Abstract
-
+In this work, we present an empirical study of DCGANs for synthetic generation of fetal head ultrasound, consisting of hyperparameter heuristics and image quality assessment.
+We present experiments to show the impact of different image sizes, epochs, data size input, and learning rates for quality image assessment on four metrics: mutual information (MI), fr\'echet inception distance (FID), peak-signal-to-noise ratio (PSNR), and local binary pattern vector (LBPv). 
+The results show that FID and LBPv have stronger relationship with clinical image quality scores.
+The resources to reproduce this work are available at \url{https://github.com/xfetus/miua2022}.
 
 [![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/) 
 [![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/) 
