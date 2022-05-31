@@ -59,7 +59,7 @@ However, there are little to no empirical studies on the use of GANs with US fet
 Considering that Deep Convolutional GANs (DCGANs) improve image quality generation and training stability of the networks (stride CNNs, extensive use of batchNorm, etc) \cite{radford2016unsupervised} and its wide application in different medical image modalities \cite{radford2016unsupervised,KAZEMINIA2020gans, skandarani2021gans, fujioka2019-gans-us}, we apply DCGAN architecture \cite{radford2016unsupervised} with different input pixel image size (e.g. DCGAN64 and DCGAN128) (Fig.~\ref{fig1}) using an open dataset of 999 real fetal head US images \cite{vandenHeuvel2018}.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{../../figures/dcgan-based-network/versions/drawing-v01.png}%%GITHUB
+\includegraphics[width=\textwidth]{../figures/dcgan-based-network/versions/drawing-v01.png}%%GITHUB
 %\includegraphics[width=\textwidth]{figures/drawing-v01.png}%%OVERLEAF
 \caption{DCGAN architecture for US imaging. Figure is adapted from the work of Radford et al. 2016 \cite{radford2016unsupervised}.} \label{fig1}
 \end{figure}
@@ -73,7 +73,7 @@ LBPv are texture descriptors, where the closer these values are from a synthetic
 
 \section{Experiments and results}
 \begin{figure}
-\includegraphics[width=\textwidth]{../../figures/results/versions/drawing-v02.png}%%GITHUB
+\includegraphics[width=\textwidth]{../figures/results/versions/drawing-v02.png}%%GITHUB
 %\includegraphics[width=\textwidth]{figures/combined-results-v00.png}%%OVERLEAF
 \caption{Regression plots for FID, V8, V20, V143 and V240 with clinician image quality scores (left) and synthetic images from DCGAN64 trained on 300 images after 300 epochs (right).}\label{fig2}
 \end{figure}
