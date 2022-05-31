@@ -8,8 +8,8 @@ The results show that FID and LBPv have stronger relationship with clinical imag
 The resources to reproduce this work are available at \url{https://github.com/xfetus/miua2022}.
 
 [![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/) 
-[![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/) 
-[![GitHub Actions Status](https://github.com/xfetus/miua2022/workflows/CITEX/badge.svg)](https://github.com/xfetus/miua2022/actions) 
+[![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/xfetus/miua2022/blob/pdfs/miua2022-abstract.pdf) 
+[![GitHub Actions Status](https://github.com/xfetus/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/xfetus/miua2022/actions) 
 **(This work is 100% Reproducible)**
 
 ## Medical Image Understanding and Analysis  [:link:](https://www.miua2022.com/).
