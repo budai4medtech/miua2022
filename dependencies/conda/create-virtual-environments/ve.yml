@@ -1,0 +1,55 @@
+## USAGE
+## cd $HOME/repositories/code/conda/create-virtual-environments
+## conda update --all                           ## UPDATE ALL base PACKAGES
+## conda list -n *VE # show list of installed packages
+## conda env create -f ve.yml   		    ## INSTALL
+## conda env update --file ve.yml --prune  	## UPDATE
+## conda activate *VE   			            ## ACTIVATE
+## conda remove -n codeVE --all			        ## REMOVE
+name: susiVE #susi as Synthetic UltraSound Imaging
+channels:
+  - defaults
+  - pytorch #https://github.com/pytorch/vision
+  - conda-forge # notebook; jupyter_contrib_nbextensions; tqdm; monai; nibabel; gdown; imgaug; ipywidgets; PyAV
+  - nvidia
+#  - anaconda # seaborn; pandas; scikit-learn; jupyter
+dependencies:
+  - pytorch=1.11.*
+  - torchvision=0.12.*
+  - python=3.10.*
+  - cudatoolkit=11.*.*
+  - av=9.*
+  - matplotlib
+  - numpy
+  - notebook
+  - jupyter_contrib_nbextensions # overview over other extensions: https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231
+  - jupyter
+  - ipywidgets
+#- Pillow<7.0 # Pillow<7.0 for Python 3.8 https://github.com/python-pillow/Pillow/issues/4130
+
+
+#- flake8
+#- black 
+#- mypy
+#- h5py
+#- python-lmdb
+
+#  - seaborn
+#  - pandas
+#  - tqdm
+#  - monai
+#  - nibabel=3.*
+#  - imgaug
+  #- torchaudio
+  #- pyyaml
+  #- pandas-datareader
+#  - pip
+#  - pip:
+#     - opencv-python
+#     - pydicom
+#     - tensorboard
+  ## MANUAL INSTALLATION IN CONDA ENV
+       ## ERROR-scikit-learn=* #https://anaconda.org/anaconda/scikit-learn
+       ## SOLUTION: conda install -n codeVE scikit-learn
+       ## gdown: Google Drive direct download of big files.
+       #
