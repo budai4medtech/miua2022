@@ -35,6 +35,30 @@ You can then clone the repository by typing (or copying) the following line in a
 git clone git@github.com:xfetus/miua2022.git
 ```
 
+
+## Contributors
+Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):  
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/theabautista"><img src="https://avatars1.githubusercontent.com/u/63061669?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thea Bautista</b></sub>        </a><br /><a href="https://github.com/xfetus/miua2022/commits?author=theabautista" title="Code">💻 🤔 🔧 </a></td>
+    <td align="center"><a href="https://github.com/"><img src="https://avatars1.githubusercontent.com/u/23114020?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jacqueline Matthew</b></sub>        </a><br /><a href="https://github.com/xfetus/miua2022/commits?author=" title="Research">  🔬 🤔  </a></td>    
+    <td align="center"><a href="https://github.com/hamidehkerdegari"><img src="https://avatars1.githubusercontent.com/u/30697849?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hamideh Kerdegari </b></sub>   </a><br /><a href="https://github.com/xfetus/miua2022/commits?author=hamidehkerdegari" title="Research">  🔬 🤔  </a></td>
+    <td align="center"><a href="https://github.com/"><img src="https://avatars1.githubusercontent.com/u/23114020?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Laura Peralta</b></sub>        </a><br /><a href="https://github.com/xfetus/miua2022/commits?author=" title="Research">  🔬 🤔  </a></td>
+    <td align="center"><a href="https://github.com/mxochicale"><img src="https://avatars1.githubusercontent.com/u/11370681?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Miguel Xochicale</b></sub>           </a><br /><a href="https://github.com/xfetus/miua2022/commits?author=mxochicale" title="Code and Research">💻 🔬 🤔 🔧 </a> <a href="https://github.com/fepegar/torchio/commits?author=mxochicale" title="Documentation">📖 🔧 </a></td>
+  </tr>
+</table>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This work follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.  
+Contributions of any kind welcome!
+
+
 ## Contact 
 If you have specific questions about the content of this repository, you can drop us an email to [miguel.xochicale@kcl.ac.uk](mailto:miguel.xochicale@kcl.ac.uk?subject="[miua2022]").
 If your question might be relevant to other people, please instead [open an issue](https://github.com/xfetus/miua2022/issues).

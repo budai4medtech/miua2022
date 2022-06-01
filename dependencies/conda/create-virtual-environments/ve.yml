@@ -1,5 +1,5 @@
 ## USAGE
-## cd $HOME/repositories/code/conda/create-virtual-environments
+## cd $HOME/repositories/  ...  /create-virtual-environments
 ## conda update --all                           ## UPDATE ALL base PACKAGES
 ## conda list -n *VE # show list of installed packages
 ## conda env create -f ve.yml   		    ## INSTALL
