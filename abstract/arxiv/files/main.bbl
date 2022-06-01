@@ -1,0 +1,87 @@
+\begin{thebibliography}{}
+
+\bibitem[Fiorentino et~al., 2022]{fiorentino2022-DLUSFetalImaging}
+Fiorentino, M.~C., Villani, F.~P., Di~Cosmo, M., Frontoni, E., and Moccia, S.
+  (2022).
+\newblock A review on deep-learning algorithms for fetal ultrasound-image
+  analysis.
+
+\bibitem[Fujioka et~al., 2019]{fujioka2019-gans-us}
+Fujioka, T., Mori, M., Kubota, K., Kikuchi, Y., Katsuta, L., Adachi, M., Oda,
+  G., Nakagawa, T., Kitazume, Y., and Tateishi, U. (2019).
+\newblock Breast ultrasound image synthesis using deep convolutional generative
+  adversarial networks.
+\newblock {\em Diagnostics}, 9(4).
+
+\bibitem[Heusel et~al., 2017]{heusel2017}
+Heusel, M., Ramsauer, H., Unterthiner, T., Nessler, B., and Hochreiter, S.
+  (2017).
+\newblock Gans trained by a two time-scale update rule converge to a local nash
+  equilibrium.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~30. Curran Associates, Inc.
+
+\bibitem[Hu et~al., 2017]{hu2017-gans-us}
+Hu, Y., Gibson, E., Lee, L.-L., Xie, W., Barratt, D.~C., Vercauteren, T., and
+  Noble, J.~A. (2017).
+\newblock Freehand ultrasound image simulation with spatially-conditioned
+  generative adversarial networks.
+\newblock In {\em Molecular Imaging, Reconstruction and Analysis of Moving Body
+  Organs, and Stroke Imaging and Treatment}.
+
+\bibitem[Kazeminia et~al., 2020]{KAZEMINIA2020gans}
+Kazeminia, S., Baur, C., Kuijper, A., {van Ginneken}, B., Navab, N.,
+  Albarqouni, S., and Mukhopadhyay, A. (2020).
+\newblock Gans for medical image analysis.
+\newblock {\em Artificial Intelligence in Medicine}, 109:101938.
+
+\bibitem[Kumar et~al., 2021]{kumar2021empirical}
+Kumar, D., Mehta, M.~A., and Chatterjee, I. (2021).
+\newblock Empirical analysis of deep convolutional generative adversarial
+  network for ultrasound image synthesis.
+\newblock {\em The Open Biomedical Engineering Journal}, 15(1).
+
+\bibitem[Lee and Noble, 2020]{lee2022-gans-us}
+Lee, L.~H. and Noble, J.~A. (2020).
+\newblock Generating controllable ultrasound images of the fetal head.
+\newblock In {\em 2020 IEEE 17th International Symposium on Biomedical Imaging
+  (ISBI)}, pages 1761--1764.
+
+\bibitem[Radford et~al., 2016]{radford2016unsupervised}
+Radford, A., Metz, L., and Chintala, S. (2016).
+\newblock Unsupervised representation learning with deep convolutional
+  generative adversarial networks.
+\newblock In {\em International Conference on Learning Representations}.
+
+\bibitem[Singh et~al., 2018]{singh2018}
+Singh, P., Mukundan, R., and Ryke, R.~D. (2018).
+\newblock Texture based quality analysis of simulated synthetic ultrasound
+  images using local binary patterns.
+\newblock {\em Journal of Imaging}, 4.
+
+\bibitem[Skandarani et~al., 2021]{skandarani2021gans}
+Skandarani, Y., Jodoin, P.-M., and Lalande, A. (2021).
+\newblock Gans for medical image synthesis: An empirical study.
+
+\bibitem[Tom and Sheet, 2018]{tom-gans-us}
+Tom, F. and Sheet, D. (2018).
+\newblock Simulating patho-realistic ultrasound images using deep generative
+  networks with adversarial learning.
+\newblock In {\em 2018 IEEE 15th International Symposium on Biomedical
+  Imaging}, pages 1174--1177.
+
+\bibitem[van~den Heuvel et~al., 2018]{vandenHeuvel2018}
+van~den Heuvel, T. L.~A., de~Bruijn, D., de~Korte, C.~L., and Ginneken, B.~v.
+  (2018).
+\newblock Automated measurement of fetal head circumference using 2d ultrasound
+  images.
+\newblock {\em PLOS ONE}, 13(8):1--20.
+
+\bibitem[Wang et~al., 2019]{wang2019}
+Wang, R., Fang, Z., Gu, J., Guo, Y., Zhou, S., Wang, Y., Chang, C., and Yu, J.
+  (2019).
+\newblock High-resolution image reconstruction for portable ultrasound imaging
+  devices.
+\newblock {\em EURASIP Journal on Advances in Signal Processing}, 2019(1):56.
+
+\end{thebibliography}

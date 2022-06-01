@@ -1,0 +1,118 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+\usepackage{graphicx}
+\usepackage[square,numbers]{natbib}
+
+\begin{document}
+
+\title{Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs}
+
+\author{
+T. Bautista \and %Thea Bautista\inst{1} \orcidID{0000-1111-2222-3333} \and
+J. Matthew \and %Jacqueline Matthew \inst{1} \orcidID{0000-1111-2222-3333} \and
+H. Kerdegari \and %Hamideh Kerdegari\inst{1} \orcidID{1111-2222-3333-4444} \and
+L. Peralta \and %Laura Peralta Pereira \inst{1} \orcidID{0000-0002-3753-5370} \and
+M. Xochicale %Miguel Xochicale\orcidID{0000-0002-8225-7517}
+}
+\authorrunning{Bautista et al.}
+
+\institute{
+King's College London, \\ 
+School of Biomedical Engineering \& Imaging Sciences \\ 
+London SE1 7EU \\
+\email{\{thea.bautista, miguel.xochicale\}@kcl.ac.uk} %\and
+}
+%
+\maketitle              % typeset the header of the contribution
+
+\begin{abstract}
+In this work, we present an empirical study of DCGANs for synthetic generation of fetal head ultrasound, consisting of hyperparameter heuristics and image quality assessment.
+We present experiments to show the impact of different image sizes, epochs, data size input, and learning rates for quality image assessment on four metrics: mutual information (MI), fr\'echet inception distance (FID), peak-signal-to-noise ratio (PSNR), and local binary pattern vector (LBPv). 
+The results show that FID and LBPv have stronger relationship with clinical image quality scores.
+The resources to reproduce this work are available at %\\ 
+\url{https://github.com/xfetus/miua2022}.
+\keywords{
+GANs \and 
+Ultrasound Fetal Imaging \and 
+Medical Image Synthesis
+}
+\end{abstract}
+
+
+\section{Introduction}
+Synthesis of Ultrasound (US) imaging is growing in medical communities as a way to mitigate the scarcity of datasets due to the cost of data collection, annotation and its ethical policies with a generalisable and reproducible deep learning pipeline \cite{fiorentino2022-DLUSFetalImaging}.
+Generative Adversarial Networks (GANs) have the ability to mimic data distributions and synthesise medical images \cite{KAZEMINIA2020gans, skandarani2021gans}.
+In the case of US imaging, GANs are able to synthesise 2D images with fetal phantoms \cite{hu2017-gans-us}, intravascular US \cite{tom-gans-us}, breast US \cite{fujioka2019-gans-us}, and fetal head US \cite{lee2022-gans-us}.
+Recently, Skandarani \textit{et al.} in 2021 presented an empirical study for GANs in medical imaging on the impact of sensitivity of hyperparameters, dataset and computer scale, FID and image quality, and its clinical usability \cite{skandarani2021gans}.
+However, there are little to no empirical studies on the use of GANs with US fetal imaging but nerve US \cite{kumar2021empirical}.
+Considering that Deep Convolutional GANs (DCGANs) improve image quality generation and training stability of the networks (stride CNNs, extensive use of batchNorm, etc) \cite{radford2016unsupervised} and its wide application in different medical image modalities \cite{radford2016unsupervised,KAZEMINIA2020gans, skandarani2021gans, fujioka2019-gans-us}, we apply DCGAN architecture \cite{radford2016unsupervised} with different input pixel image size (e.g. DCGAN64 and DCGAN128) (Fig.~\ref{fig1}) using an open dataset of 999 real fetal head US images \cite{vandenHeuvel2018}.
+
+\begin{figure}
+%\includegraphics[width=\textwidth]{../figures/dcgan-based-network/versions/drawing-v01.png}%%GITHUB
+%\includegraphics[width=\textwidth]{figures/drawing-v01.png}%%OVERLEAF
+\includegraphics[width=\textwidth]{fig01.png} %%ARXIV
+\caption{DCGAN architecture for US imaging. Figure is adapted from the work of Radford et al. 2016 \cite{radford2016unsupervised}.} \label{fig1}
+\end{figure}
+
+\section{Quality assessment of synthetic fetal head US imaging}
+We consider four metrics for image quality assessment: The Fr\'echet Inception Distance (FID), Peak-signal-to-noise ratio (PSNR), Mutual information (MI), and local binary pattern vector (LBPv). 
+FID is one of the most widely used metrics for GANs, where a lower FID indicates better image quality \cite{heusel2017}.
+PSNR is a measurement of the ratio between the maximum power of a signal and the difference between the original and synthetic image, where the higher the PSNR is the closer the intensity similarity is between the synthetic and original US images. 
+MI is a measure of image similarity and indicates the mutual dependence between two images, where the higher the mutual information is the greater the similarity between the images \cite{wang2019}.
+LBPv are texture descriptors, where the closer these values are from a synthetic image to a reference LBPv calculated from real US images, the higher the image quality is \cite{singh2018}. 
+
+\section{Experiments and results}
+\begin{figure}
+%\includegraphics[width=\textwidth]{../figures/results/versions/drawing-v02.png}%%GITHUB
+%\includegraphics[width=\textwidth]{figures/combined-results-v00.png}%%OVERLEAF
+\includegraphics[width=\textwidth]{fig02.png} %%ARXIV
+\caption{Regression plots for FID, V8, V20, V143 and V240 with clinician image quality scores (left) and synthetic images from DCGAN64 trained on 300 images after 300 epochs (right).}\label{fig2}
+\end{figure}
+
+Fetal head US images were resized to 64x64 (due to training instability at higher resolutions) and augmentation was applied in the form of random horizontal flipping and rotation to mimic variation in US probe location.
+Then DCGAN model was trained with the original hyperparameters, (learning rate=0.0002; optimiser=Adam optimiser; $\beta1=0.5$; $\beta2= 0.999$ and loss function=binary cross entropy loss  \cite{radford2016unsupervised}), demonstrating the most stable training and resulting with the most realistic synthetic images when training the model on augmented data.
+Hence, the model was trained on 100, 300, 500, 800 and 999 US images, creating 20 sets of 800 synthetic images with 300, 500, 800 and 1000 epochs.
+FID, MI, PSNR and the LBPv values (sLBPv) were calculated using those synthetic images.
+A reference LBPv (rLBPv) was calculated from 800 non-augmented original images from which the sLBPv was compared to.
+To assess the usefulness of FID, PSNR, MI and LBPv, a clinician with 10 years' experience with fetal US and two biomedical engineers were asked to differentiate between 68 real and synthetic images and to rate image quality on a scale of 1-5 (1 being poor quality and 5 being high quality).
+Image quality in the generated images did not vary significantly with increasing training size (MI, PSNR, FID and LBPv did not differ significantly with $p>0.05$) which could indicate an upper limit in the capability of DCGAN in generating synthetic fetal US images.
+The biomedical engineers indicated 56.14\% of the synthetic images as 'real' which shows that the DCGAN was able to create images that were indifferentiable from the original ones.
+However, the clinician had marked all images in the survey as 'fake' due to the small resolution and some instances of mode collapse reduced variation in synthetic images; both of which mitigate clinical application.
+FID and the V8, V20, V143 and V240 elements of the LBPv showed the strongest relationship to clinician image quality scores in regression analysis and highest correlation scores ($r>0.2$) in comparison to the other metrics (Fig.~\ref{fig2}, left); the small correlation was possibly attributed to the low number of data points used for analysis. These LBPv elements also had the smallest difference to the rLBPv thus show promise as indicators for textural similarity.
+
+
+\section{Conclusions and future work}
+To conclude, DCGANs are capable of satisfactorily learning the data distribution of the training images so as to create fetal US images, where FID and LBPv metrics show potential for image quality assessment of synthetic fetal US in comparison to MI and PSNR.
+However, the synthesised images are limited for clinical application due to their resolution of 64x64 (less than 500x500 pixels).
+Hence, to create higher resolutions of US images for clinical applicaitons, future work might lead to tests other GANs models, architectural alterations, hyperparameter optimization and use other forms of data augmentation with other fetal ultrasound datasets.
+
+%%%GITHUB
+%\bibliographystyle{splncs04}
+%\bibliography{../references/references.bib}
+
+%%%OVERLEAF
+%\bibliographystyle{apalike}
+%\bibliography{references}
+
+%%%ARXIV
+%\bibliographystyle{splncs04}
+\bibliographystyle{apalike}
+%\bibliography{../../references/references.bib}
+\input{main.bbl} %% uncomment for arxiv version
+
+
+%%OTHERS
+%\bibliographystyle{abbrvnat}
+
+\end{document}
