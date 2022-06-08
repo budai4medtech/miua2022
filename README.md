@@ -7,7 +7,7 @@ We present experiments to show the impact of different image sizes, epochs, data
 The results show that FID and LBPv have stronger relationship with clinical image quality scores.
 The resources to reproduce this work are available at \url{https://github.com/xfetus/miua2022}.
 
-[![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/) 
+[![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/2206.01731) 
 [![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/xfetus/miua2022/blob/pdfs/miua2022-abstract.pdf) 
 [![GitHub Actions Status](https://github.com/xfetus/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/xfetus/miua2022/actions) 
 **(This work is 100% Reproducible)**
@@ -25,7 +25,29 @@ Hence, you are free to reuse it and modify it as much as you want and as long as
 
 ### BibTeX to cite
 ```
-
+@misc{https://doi.org/10.48550/arxiv.2206.01731,
+  author = {Bautista, Thea and 
+            Matthew, Jacqueline and 
+            Kerdegari, Hamideh and 
+            Peralta, Laura and 
+            Xochicale, Miguel},
+  title = {Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs},
+  doi = {10.48550/ARXIV.2206.01731},
+  url = {https://arxiv.org/abs/2206.01731},
+  keywords = {Image and Video Processing (eess.IV), 
+              Computer Vision and Pattern Recognition (cs.CV), 
+              Machine Learning (cs.LG), 
+              Medical Physics (physics.med-ph), 
+              FOS: Electrical engineering, electronic engineering, information engineering, 
+              FOS: Electrical engineering, electronic engineering, information engineering, 
+              FOS: Computer and information sciences, 
+              FOS: Computer and information sciences, 
+              FOS: Physical sciences, 
+              FOS: Physical sciences}, 
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International}
+}
 ```
 
 ## Clone repository
