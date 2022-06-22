@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - 05-camera-ready
       - $ADD_ISSUENUMER_NAME
 
 jobs:
@@ -35,7 +36,7 @@ jobs:
         echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         git config --global core.sshCommand "ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
-        git clone --depth=1 --branch pdfs git@github.com:xfetus/miua2022.git "$GITHUB_WORKSPACE/deploy"
+        git clone --depth=1 --branch pdfs git@github.com:budai4medtech/miua2022.git "$GITHUB_WORKSPACE/deploy"
         cp -f abstract/latex/main.pdf "$GITHUB_WORKSPACE/deploy/miua2022-abstract.pdf"
         cd "$GITHUB_WORKSPACE/deploy"
         git add miua2022-abstract.pdf

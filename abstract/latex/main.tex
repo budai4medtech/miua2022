@@ -29,7 +29,7 @@ M. Xochicale %Miguel Xochicale\orcidID{0000-0002-8225-7517}
 
 \institute{
 King's College London, \\ 
-School of Biomedical Engineering \& Imaging Sciences \\ 
+School of Biomedical Engineering \& Imaging Sciences, \\ 
 London SE1 7EU \\
 \email{\{thea.bautista, miguel.xochicale\}@kcl.ac.uk} %\and
 }
@@ -41,7 +41,7 @@ In this work, we present an empirical study of DCGANs for synthetic generation o
 We present experiments to show the impact of different image sizes, epochs, data size input, and learning rates for quality image assessment on four metrics: mutual information (MI), fr\'echet inception distance (FID), peak-signal-to-noise ratio (PSNR), and local binary pattern vector (LBPv). 
 The results show that FID and LBPv have stronger relationship with clinical image quality scores.
 The resources to reproduce this work are available at %\\ 
-\url{https://github.com/xfetus/miua2022}.
+\url{https://github.com/budai4medtech/miua2022}.
 \keywords{
 GANs \and 
 Ultrasound Fetal Imaging \and 
@@ -61,11 +61,12 @@ Considering that Deep Convolutional GANs (DCGANs) improve image quality generati
 \begin{figure}
 \includegraphics[width=\textwidth]{../figures/dcgan-based-network/versions/drawing-v01.png}%%GITHUB
 %\includegraphics[width=\textwidth]{figures/drawing-v01.png}%%OVERLEAF
+%\includegraphics[width=\textwidth]{fig01.png} %%ARXIV
 \caption{DCGAN architecture for US imaging. Figure is adapted from the work of Radford et al. 2016 \cite{radford2016unsupervised}.} \label{fig1}
 \end{figure}
 
 \section{Quality assessment of synthetic fetal head US imaging}
-We consider four metrics for image quality assessment: The Fr\'echet Inception Distance (FID), Peak-signal-to-noise ratio (PSNR), Mutual information (MI), and local binary pattern vector (LBPv). 
+For quality assessment of synthetic fetal head US imaging, we consider four metrics for image quality assessment: The Fr\'echet Inception Distance (FID), Peak-signal-to-noise ratio (PSNR), Mutual information (MI), and local binary pattern vector (LBPv). 
 FID is one of the most widely used metrics for GANs, where a lower FID indicates better image quality \cite{heusel2017}.
 PSNR is a measurement of the ratio between the maximum power of a signal and the difference between the original and synthetic image, where the higher the PSNR is the closer the intensity similarity is between the synthetic and original US images. 
 MI is a measure of image similarity and indicates the mutual dependence between two images, where the higher the mutual information is the greater the similarity between the images \cite{wang2019}.
@@ -75,7 +76,8 @@ LBPv are texture descriptors, where the closer these values are from a synthetic
 \begin{figure}
 \includegraphics[width=\textwidth]{../figures/results/versions/drawing-v02.png}%%GITHUB
 %\includegraphics[width=\textwidth]{figures/combined-results-v00.png}%%OVERLEAF
-\caption{Regression plots for FID, V8, V20, V143 and V240 with clinician image quality scores (left) and synthetic images from DCGAN64 trained on 300 images after 300 epochs (right).}\label{fig2}
+%\includegraphics[width=\textwidth]{fig02.png} %%ARXIV
+\caption{Regression plots for FID, V8, V20, V143 and V240 with clinician image quality scores (left) and nine synthetic images of 64x64 pixel size from DCGAN64 trained on 300 images after 300 epochs (right).}\label{fig2}
 \end{figure}
 
 Fetal head US images were resized to 64x64 (due to training instability at higher resolutions) and augmentation was applied in the form of random horizontal flipping and rotation to mimic variation in US probe location.
@@ -102,6 +104,11 @@ Hence, to create higher resolutions of US images for clinical applicaitons, futu
 %%%OVERLEAF
 %\bibliographystyle{apalike}
 %\bibliography{references}
+
+%%%ARXIV
+%%\bibliographystyle{splncs04}
+%\bibliographystyle{apalike}
+%\input{main.bbl}
 
 %%OTHERS
 %\bibliographystyle{abbrvnat}
