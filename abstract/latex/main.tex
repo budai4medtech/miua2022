@@ -38,7 +38,7 @@ London SE1 7EU \\
 
 \begin{abstract}
 In this work, we present an empirical study of DCGANs for synthetic generation of fetal head ultrasound, consisting of hyperparameter heuristics and image quality assessment.
-We present experiments to show the impact of different image sizes, epochs, dataset size input, and learning rates for quality image assessment on four metrics: mutual information (MI), Fr\'echet inception distance (FID), peak-signal-to-noise ratio (PSNR), and local binary pattern vector (LBPv). 
+We present experiments to show the impact of different image resolutions, epochs, dataset size input, and learning rates for quality image assessment on four metrics: mutual information (MI), Fr\'echet inception distance (FID), peak-signal-to-noise ratio (PSNR), and local binary pattern vector (LBPv). 
 The results show that FID and LBPv have stronger relationship with clinical image quality scores.
 The resources to reproduce this work are available at %\\ 
 \url{https://github.com/budai4medtech/miua2022}.
@@ -59,7 +59,7 @@ However, there are little to no empirical studies on the use of GANs with US fet
 Considering that Deep Convolutional GANs (DCGANs) improve image quality generation and training stability of the networks (stride CNNs, extensive use of batchNorm, etc) \cite{radford2016unsupervised} and its wide application in different medical image modalities \cite{radford2016unsupervised,KAZEMINIA2020gans, skandarani2021gans, fujioka2019-gans-us}, we apply DCGAN architecture \cite{radford2016unsupervised} with different input pixel image size (e.g. DCGAN64 and DCGAN128) (Fig.~\ref{fig1}) using an open dataset of 999 real fetal head US images \cite{vandenHeuvel2018}.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{../figures/dcgan-based-network/versions/drawing-v01.png}%%GITHUB
+\includegraphics[width=\textwidth]{../figures/dcgan-based-network/versions/drawing-v02.png}%%GITHUB
 %\includegraphics[width=\textwidth]{figures/drawing-v01.png}%%OVERLEAF
 %\includegraphics[width=\textwidth]{fig01.png} %%ARXIV
 \caption{DCGAN architecture for US imaging. Figure is adapted from the work of Radford et al. 2016 \cite{radford2016unsupervised}.} \label{fig1}
@@ -74,7 +74,7 @@ LBPv are texture descriptors, where the closer these values are from a synthetic
 
 \section{Experiments and results}
 \begin{figure}
-\includegraphics[width=\textwidth]{../figures/results/versions/drawing-v02.png}%%GITHUB
+\includegraphics[width=\textwidth]{../figures/results/versions/drawing-v03.png}%%GITHUB
 %\includegraphics[width=\textwidth]{figures/combined-results-v00.png}%%OVERLEAF
 %\includegraphics[width=\textwidth]{fig02.png} %%ARXIV
 \caption{Regression plots for FID, V8, V20, V143 and V240 with clinician image quality scores (left) and nine synthetic images of 64x64 pixel size from DCGAN64 trained on 300 images after 300 epochs (right).}\label{fig2}
@@ -95,7 +95,7 @@ FID and the V8, V20, V143 and V240 elements of the LBPv showed the strongest rel
 \section{Conclusions and future work}
 To conclude, DCGANs are capable of satisfactorily learning the data distribution of the training images so as to create synthetic fetal US images indifferentiable from the originals, where FID and LBPv metrics show potential for image quality assessment of synthetic fetal US in comparison to MI and PSNR.
 However, the synthesised images are limited in clinical application due to their resolution of 64x64 (less than 500x500 pixels) and artefacts such as mode collapse.
-Hence, to create higher resolution US images for clinical applications, future work might lead to testing other GAN models, architectural alterations, hyperparameter optimization and using other forms of data augmentation with other fetal US datasets.
+Hence, to create higher resolution US images for clinical applications, future work might lead to testing other GAN models, architectural alterations, hyperparameter optimization, addresing mode collapse artefacts and using other forms of data augmentation with other fetal US datasets.
 
 %%%GITHUB
 \bibliographystyle{splncs04}
