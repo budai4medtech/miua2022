@@ -1,5 +1,5 @@
 ## USAGE
-## cd $HOME/repositories/  ...  /create-virtual-environments
+## cd ../create-virtual-environments
 ## conda update --all                           ## UPDATE ALL base PACKAGES
 ## conda list -n *VE # show list of installed packages
 ## conda env create -f ve.yml   		    ## INSTALL
@@ -25,6 +25,8 @@ dependencies:
   - jupyter_contrib_nbextensions # overview over other extensions: https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231
   - jupyter
   - ipywidgets
+  - monai
+  - nibabel=3.*
 #- Pillow<7.0 # Pillow<7.0 for Python 3.8 https://github.com/python-pillow/Pillow/issues/4130
 
 
@@ -37,7 +39,6 @@ dependencies:
 #  - seaborn
 #  - pandas
 #  - tqdm
-#  - monai
 #  - nibabel=3.*
 #  - imgaug
   #- torchaudio
@@ -52,4 +53,4 @@ dependencies:
        ## ERROR-scikit-learn=* #https://anaconda.org/anaconda/scikit-learn
        ## SOLUTION: conda install -n codeVE scikit-learn
        ## gdown: Google Drive direct download of big files.
-       #
+ 

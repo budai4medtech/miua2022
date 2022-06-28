@@ -1,6 +1,6 @@
 # arXiv submission
 ## Preparation
-1. Edit paths in A_copy-tex-figures.bash
+1. Edit paths in `A_copy-tex-figures.bash` using right figure versions and tex files. 
 
 2. Run script to copy tex files and images to arxiv/files path
 ```
@@ -22,7 +22,7 @@ bash ../B_pdflatex-bibtex.bash
 ```
 Check that reference were appropietely called `evince main.pdf`
 
-4.1 edit reference section as follows
+4.1 edit reference section in `main.tex` as follows
 ```
 %%\bibliography{../references/references}
 \input{main.bbl} %% uncomment for arxiv version

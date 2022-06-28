@@ -10,3 +10,19 @@
 
 ## ignores vim temporal files
 **/*.swp
+
+## temporal files for local tex build
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.log
+**/*.nav
+**/main.pdf
+**/*.snm
+**/*.synctex.gz
+**/*.toc
+**/_minted-main
+**/*.bbl
+**/*.blg
+**/*.out
+**/comment.cut
