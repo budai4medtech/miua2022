@@ -1,20 +1,23 @@
 # :page_facing_up: Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs
 T. Bautista, J. Matthew, H. Kerdegari, L. Peralta and M. Xochicale 
 
+[![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/2206.01731) 
+[![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/budai4medtech/miua2022/blob/pdfs/miua2022-abstract.pdf) 
+[![GitHub Actions Status](https://github.com/budai4medtech/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/budai4medtech/miua2022/actions) 
+**(This work is 100% Reproducible)**
+
 ## Abstract
 In this work, we present an empirical study of DCGANs, including hyperparameter heuristics and image quality assessment, as a way to address the scarcity of datasets to investigate fetal head ultrasound.
 We present experiments to show the impact of different image resolutions, epochs, dataset size input, and learning rates for quality image assessment on four metrics: mutual information (MI), Fr\'echet inception distance (FID), peak-signal-to-noise ratio (PSNR), and local binary pattern vector (LBPv). 
 The results show that FID and LBPv have stronger relationship with clinical image quality scores.
 The resources to reproduce this work are available at \url{https://github.com/budai4medtech/miua2022}.
 
-[![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/2206.01731) 
-[![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/budai4medtech/miua2022/blob/pdfs/miua2022-abstract.pdf) 
-[![GitHub Actions Status](https://github.com/budai4medtech/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/budai4medtech/miua2022/actions) 
-**(This work is 100% Reproducible)**
+## Poster
+![poster](poster/resources/versions/drawing-v08.png)
 
 ## Medical Image Understanding and Analysis  [:link:](https://www.miua2022.com/).
 26th UK Conference on Medical Image Understanding and Analysis. 27 - 29 July 2022 at University of Cambridge.   
-See [README.md](docs/conference/README.md) for further information about the workshop.
+See [README.md](docs/conference/README.md) for further information about miau2022 conference.
 
 ## Licence and Citation 
 This work is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 

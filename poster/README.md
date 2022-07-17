@@ -5,9 +5,11 @@
 * For scaling images: Make use of the lock icon "When locked change both width and height by the same proportion"
 
 ## Rendering  PDF in inkscape
-1. GO TO PRINT
-2. RENDERING>BITMAP (300dpi default)
-3. PRINT
+1. Open poster: 
+	inkscape $HOME/repositories/budai4medtech/miua2022/poster/resources/vectors/drawing-v08.svg
+2. GO TO PRINT
+3. RENDERING>BITMAP (300dpi default)
+4. PRINT
 
 ## converting pdf to image
 ```
