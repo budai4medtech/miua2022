@@ -1,6 +1,6 @@
 <h1 align="center">:page_facing_up: Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs</h1>
 <div align="center">
-**T. Bautista, J. Matthew, H. Kerdegari, L. Peralta and M. Xochicale**     
+T. Bautista, J. Matthew, H. Kerdegari, L. Peralta and M. Xochicale     
 
 26th Conference on Medical Image Understanding and Analysis (MIUA 2022), Cambridge, 27-29  July 2022      
  
