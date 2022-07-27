@@ -9,3 +9,5 @@
 🐙 https://github.com/budai4medtech/miua2022
 
 @KingsImaging #imaging #AI #healthcare #MedTech 
+
+[ATTACH_VIDEO] 
