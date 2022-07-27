@@ -1,16 +1,19 @@
-# :page_facing_up: Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs
-T. Bautista, J. Matthew, H. Kerdegari, L. Peralta and M. Xochicale 
+<h1 align="center">:page_facing_up: Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs</h1>
+<div align="center">
+T. Bautista, J. Matthew, H. Kerdegari, L. Peralta and M. Xochicale     
 
+26th Conference on Medical Image Understanding and Analysis (MIUA 2022), Cambridge, 27-29  July 2022      
+ 
 [![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/2206.01731) 
 [![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/budai4medtech/miua2022/blob/pdfs/miua2022-abstract.pdf) 
-[![GitHub Actions Status](https://github.com/budai4medtech/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/budai4medtech/miua2022/actions) 
-**(This work is 100% Reproducible)**
+[![GitHub Actions Status](https://github.com/budai4medtech/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/budai4medtech/miua2022/actions)       
+(This work is 100% Reproducible)   
+</div>
 
 ## Abstract
 In this work, we present an empirical study of DCGANs, including hyperparameter heuristics and image quality assessment, as a way to address the scarcity of datasets to investigate fetal head ultrasound.
 We present experiments to show the impact of different image resolutions, epochs, dataset size input, and learning rates for quality image assessment on four metrics: mutual information (MI), Fr\'echet inception distance (FID), peak-signal-to-noise ratio (PSNR), and local binary pattern vector (LBPv). 
 The results show that FID and LBPv have stronger relationship with clinical image quality scores.
-The resources to reproduce this work are available at \url{https://github.com/budai4medtech/miua2022}.
 
 ## Poster
 ![poster](poster/resources/versions/drawing-v08.png)
@@ -23,8 +26,7 @@ See [README.md](docs/conference/README.md) for further information about miau202
 This work is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 
 Hence, you are free to reuse it and modify it as much as you want and as long as you cite [this work](https://github.com/budai4medtech/miua2022) as original reference and you re-share your work under the same terms.
 
-### Cite as
->  
+
 
 ### BibTeX to cite
 ```
@@ -76,13 +78,11 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 </table>
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This work follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.  
 Contributions of any kind welcome!
 
 
-## Contact 
-If you have specific questions about the content of this repository, you can drop us an email to [miguel.xochicale@kcl.ac.uk](mailto:miguel.xochicale@kcl.ac.uk?subject="[miua2022]").
-If your question might be relevant to other people, please instead [open an issue](https://github.com/budai4medtech/miua2022/issues).
+## Contact and issues 
+Feel free to [open an issue](https://github.com/budai4medtech/miua2022/issues) for contact and questions.
