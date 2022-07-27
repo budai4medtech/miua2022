@@ -1,10 +1,12 @@
-# :page_facing_up: Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs
+<h1 align="center">:page_facing_up: Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs</h1>
+<div align="center">
 T. Bautista, J. Matthew, H. Kerdegari, L. Peralta and M. Xochicale 
 
 [![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/2206.01731) 
 [![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/budai4medtech/miua2022/blob/pdfs/miua2022-abstract.pdf) 
 [![GitHub Actions Status](https://github.com/budai4medtech/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/budai4medtech/miua2022/actions) 
 **(This work is 100% Reproducible)**
+</div>
 
 ## Abstract
 In this work, we present an empirical study of DCGANs, including hyperparameter heuristics and image quality assessment, as a way to address the scarcity of datasets to investigate fetal head ultrasound.
@@ -83,6 +85,5 @@ This work follows the [all-contributors](https://github.com/all-contributors/all
 Contributions of any kind welcome!
 
 
-## Contact 
-If you have specific questions about the content of this repository, you can drop us an email to [miguel.xochicale@kcl.ac.uk](mailto:miguel.xochicale@kcl.ac.uk?subject="[miua2022]").
-If your question might be relevant to other people, please instead [open an issue](https://github.com/budai4medtech/miua2022/issues).
+## Contact and issues 
+Feel free to [open an issue](https://github.com/budai4medtech/miua2022/issues) for questions.
