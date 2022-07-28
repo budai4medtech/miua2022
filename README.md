@@ -5,6 +5,7 @@ T. Bautista, J. Matthew, H. Kerdegari, L. Peralta and M. Xochicale
 26th Conference on Medical Image Understanding and Analysis (MIUA 2022), Cambridge, 27-29  July 2022      
  
 [![article](https://img.shields.io/badge/article-arXiv-orange.svg)](https://arxiv.org/abs/2206.01731) 
+[![article](https://img.shields.io/badge/video-YouTube-red.svg)](https://www.youtube.com/watch?v=wNKgScMzjPY)
 [![article](https://img.shields.io/badge/read-article-blue.svg)](https://github.com/budai4medtech/miua2022/blob/pdfs/miua2022-abstract.pdf) 
 [![GitHub Actions Status](https://github.com/budai4medtech/miua2022/workflows/CITEX-MIUA2022/badge.svg)](https://github.com/budai4medtech/miua2022/actions)       
 (This work is 100% Reproducible)   
